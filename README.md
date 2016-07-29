@@ -20,3 +20,8 @@ Without shared memory: 1.82 s
 With shared memory: 1.06 s
 Using CuBLAS: 0.27 s
 ```
+
+
+**Second thought**: Matrix multiplication is mostly for gradient descent style solvers. For sampling based ones like Gibbs sampling (though also involving some MM), I'm not sure whether GPU could help, since we might be able to sample independent parameters simultaneously. So, to what extend can we identify these independent parameters?
+
+
