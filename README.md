@@ -1,4 +1,4 @@
-Run samples from [NumbaPro](https://docs.continuum.io/numbapro/index-archived#getting-started) and [reference examples](https://github.com/ContinuumIO/numbapro-examples). cuBLAS is said to be fast for matrix multiplication (see [here](https://github.com/ContinuumIO/numbapro-examples/tree/master/cublas)), while still not that much, and sometimes even slower than optimized Numpy code. So I won't use NumbaPro (Accelerate) to optimize Numpy code.
+Run samples from [NumbaPro](https://docs.continuum.io/numbapro/index-archived) and [reference examples](https://github.com/ContinuumIO/numbapro-examples). cuBLAS is said to be fast for matrix multiplication (see [here](https://github.com/ContinuumIO/numbapro-examples/tree/master/cublas)), while still not that much, and sometimes even slower than optimized Numpy code. So I won't use NumbaPro (Accelerate) to optimize Numpy code.
 
 Result from "test\_mm.py" for different methods of Matrix Multiplication and their speed:
 
