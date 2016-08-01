@@ -25,3 +25,6 @@ Using CuBLAS: 0.27 s
 **Second thought**: Matrix multiplication is mostly for gradient descent style solvers. For sampling based ones like Gibbs sampling (though also involving some MM), I'm not sure whether GPU could help, since we might be able to sample independent parameters simultaneously. So, to what extend can we identify these independent parameters?
 
 
+**Third thought**: Python CUDA might help for Variational Inference algorithms, since the most usual solver is coordinate ascent style, in which we iteratively take numerical calculation (not sampling, though similar to Gibbs sampling) for each of the variational parameters. However, since VI 1. is already an approximation to the true posterior inference (without theoretical guarantee), and 2. is already very fast (each faster for stochastic variational inference), I'm not sure it's worth our efforts to transform the code into GPU code in order to do VI faster. Also, according to what we saw above, it's already very fast if the code is optimized properly with numpy.
+
+
